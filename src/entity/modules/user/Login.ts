@@ -15,7 +15,7 @@ export class LoginResolver {
 
     if (!user) return null;
 
-    console.log({user});
+    console.log({ user });
 
     const valid = await bcrypt.compare(password, user.password);
 

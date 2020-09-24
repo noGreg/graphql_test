@@ -19,9 +19,7 @@ const main = async () => {
   })
 
   const app = Express();
-
-  console.log('DBROUTE: ', process.env.DBROUTE);
-
+  
   const RedisStore = connectRedis(session);
 
   app.use(cors({
